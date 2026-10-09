@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Niti Dhabalia | Supply Chain & Accounting</title>
+  <meta name="description" content="Portfolio of Niti Dhabalia, Supply Chain Management and Accounting student at Rutgers Business School.">
+  <style>
+    :root {
+      --red: #b3122b;
+      --red-dark: #8f0e22;
+      --ink: #1f1f1f;
+      --muted: #5f5f5f;
+      --line: #e3e3e3;
+      --soft: #faf5f5;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+    h1, h2, h3, nav, .btn, .chips, .when, .meta, footer {
+      font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+    }
+    a { color: var(--red); }
+    a:focus-visible, .btn:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+    header.top { background: var(--red); color: var(--white); padding: 1rem 0; }
+    header.top .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
+    .brand { font-family: "Helvetica Neue", Arial, sans-serif; font-weight: 700; color: var(--white); text-decoration: none; font-size: 1.1rem; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-size: .95rem; }
+    nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+    nav a:focus-visible { outline-color: var(--white); }
+
+    .hero { padding: 4rem 0; }
+    .hero .wrap { display: flex; gap: 3rem; align-items: center; }
+    .photo {
+      width: 220px; height: 220px; flex: none;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--red);
+      background: var(--soft);
+    }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 1rem; color: var(--red); }
+    .statement { font-size: clamp(1.1rem, 2.4vw, 1.35rem); margin: 0 0 1rem; }
+    .meta { color: var(--muted); margin: 0 0 1.5rem; font-size: .95rem; }
+    .btn {
+      display: inline-block; padding: .65rem 1.3rem; border-radius: 4px;
+      background: var(--red); color: var(--white); font-weight: 700;
+      text-decoration: none; border: 2px solid var(--red); margin-right: .5rem;
+    }
+    .btn:hover { background: var(--red-dark); border-color: var(--red-dark); }
+    .btn.alt { background: var(--white); color: var(--red); }
+    .btn.alt:hover { background: var(--soft); }
+
+    section { padding: 3.5rem 0; border-top: 1px solid var(--line); }
+    section.tint { background: var(--soft); }
+    h2 { font-size: 1.8rem; margin: 0 0 1.75rem; color: var(--red); padding-bottom: .5rem; border-bottom: 3px solid var(--red); display: inline-block; }
+    h3 { font-size: 1.15rem; margin: 0 0 .4rem; }
+
+    .skill-groups { display: grid; gap: 2rem 3rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .skill-groups h3 { color: var(--ink); margin-bottom: .75rem; }
+    .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+    .chips li { border: 1px solid var(--line); background: var(--white); border-radius: 4px; padding: .3rem .8rem; font-size: .92rem; }
+    .chips li.cert { background: var(--red); border-color: var(--red); color: var(--white); font-weight: 700; }
+
+    .projects { display: grid; gap: 1.5rem; }
+    .project { background: var(--white); border: 1px solid var(--line); border-left: 5px solid var(--red); border-radius: 4px; padding: 1.5rem; }
+    .project .when { color: var(--muted); font-size: .9rem; margin: 0 0 .75rem; }
+    .project p { margin: 0 0 .75rem; }
+    .project ul { margin: 0; padding-left: 1.2rem; }
+
+    footer { padding: 1.5rem 0; background: var(--red); color: var(--white); font-size: .9rem; text-align: center; }
+
+    @media (max-width: 680px) {
+      .hero .wrap { flex-direction: column; text-align: center; gap: 1.5rem; }
+      nav a { margin-left: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#top">Niti Dhabalia</a>
+      <nav aria-label="Main">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 1. PERSONAL STATEMENT -->
+    <div class="hero">
+      <div class="wrap">
+        <!-- Save your LinkedIn headshot as headshot.jpg in the same folder as this file -->
+        <img class="photo" src="headshot.jpg" alt="Professional headshot of Niti Dhabalia">
+        <div>
+          <h1>Niti Dhabalia</h1>
+          <p class="statement">
+            I'm a Supply Chain Management and Accounting student at Rutgers Business School who pairs financial analysis with operational thinking to help organizations run more efficiently.
+          </p>
+          <p class="meta">Rutgers Business School – Honors College &middot; Class of 2029 &middot; GPA 4.0</p>
+          <a class="btn" href="#projects">See my projects</a>
+          <a class="btn alt" href="mailto:niti.dhabalia@gmail.com">Email me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. SKILLS -->
+    <section id="skills" class="tint">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="skill-groups">
+          <div>
+            <h3>Technical</h3>
+            <ul class="chips">
+              <li class="cert">Microsoft Excel (Certified)</li>
+              <li class="cert">Bookkeeping (Intuit Certified)</li>
+              <li>Financial statement analysis</li>
+              <li>Revenue forecasting</li>
+              <li>Accounts payable &amp; invoice reconciliation</li>
+              <li>Vendor database management</li>
+              <li>POS systems</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Professional</h3>
+            <ul class="chips">
+              <li>Event &amp; logistics planning</li>
+              <li>Cross-functional collaboration</li>
+              <li>Presenting &amp; pitching</li>
+              <li>Vendor communication</li>
+              <li>Customer service</li>
+              <li>Attention to detail</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Coursework</h3>
+            <ul class="chips">
+              <li>Intro to Supply Chain</li>
+              <li>Financial Accounting</li>
+              <li>Procurement &amp; Global Sourcing</li>
+              <li>Demand Planning &amp; Fulfillment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="projects">
+
+          <article class="project">
+            <h3>Dollar General Investment Analysis</h3>
+            <p class="when">Bender Trust Case Competition &middot; Oct – Nov 2025</p>
+            <p>
+              Analyzed five years of Dollar General's financial statements to project future revenue, assess company risks, and compare its position against competitors in the retail sector. Presented a buy recommendation backed by quantitative and qualitative analysis.
+            </p>
+            <ul>
+              <li>Built revenue projections from historical financials</li>
+              <li>Benchmarked the company against sector peers</li>
+              <li>Delivered the final investment pitch as a team</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3>BASE Student Case Competition</h3>
+            <p class="when">Rutgers Business Association of Supply Chain Expertise &middot; Oct 2025 – Present</p>
+            <p>
+              Helped develop and launch a case competition with a partner student organization, handling event planning, outreach, and coordination across five BASE committees.
+            </p>
+            <ul>
+              <li>Coordinated logistics for 5 general-interest meetings</li>
+              <li>Managed scheduling and speaker coordination</li>
+              <li>Worked with partners to keep the event on track</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3>Vendor Compliance Database Update</h3>
+            <p class="when">Piscataway Board of Education &middot; Summers 2023 – 2025</p>
+            <p>
+              Maintained records for a database of more than 3,000 vendors, contacting vendors to collect and update W-9 forms and New Jersey Business Registration Certificates. Also reconciled invoices during year-end close with the Accounts Payable team.
+            </p>
+            <ul>
+              <li>Supported regulatory compliance and accurate vendor records</li>
+              <li>Resolved invoice discrepancies directly with vendors</li>
+              <li>Organized electronic and physical filing systems</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="tint">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p>
+          I'm looking for internships in supply chain, procurement, and accounting. Reach me at
+          <a href="mailto:niti.dhabalia@gmail.com">niti.dhabalia@gmail.com</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Niti Dhabalia</footer>
+
+</body>
+</html>
